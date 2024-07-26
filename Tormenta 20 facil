@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tormenta20 - Criador de Fichas de RPG</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 1rem;
+            text-decoration: none;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        form {
+            margin-top: 1rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tormenta20 - Criador de Fichas de RPG</h1>
+    </header>
+    <nav>
+        <a href="#criar-ficha">Criar Ficha</a>
+        <a href="#consultar-regras">Consultar Regras</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <div class="container">
+        <section id="criar-ficha">
+            <h2>Criar Ficha de Personagem</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nome">Nome do Personagem:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="classe">Classe:</label>
+                    <select id="classe" name="classe" required>
+                        <option value="guerreiro">Guerreiro</option>
+                        <option value="mago">Mago</option>
+                        <option value="ladino">Ladino</option>
+                        <!-- Adicione mais classes conforme necessário -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nivel">Nível:</label>
+                    <input type="number" id="nivel" name="nivel" min="1" max="20" required>
+                </div>
+                <div class="form-group">
+                    <label for="descricao">Descrição:</label>
+                    <textarea id="descricao" name="descricao" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Criar Ficha</button>
+                </div>
+            </form>
+        </section>
+        <section id="consultar-regras">
+            <h2>Consultar Regras do Tormenta20</h2>
+            <p>Aqui você pode encontrar um resumo das regras básicas do Tormenta20:</p>
+            <ul>
+                <li><strong>Classes:</strong> Guerreiro, Mago, Ladino, etc.</li>
+                <li><strong>Habilidades:</strong> Força, Destreza, Constituição, Inteligência, Sabedoria, Carisma.</li>
+                <li><strong>Combat:</strong> Regras para combate, magias e habilidades especiais.</li>
+                <!-- Adicione mais informações conforme necessário -->
+            </ul>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Para mais informações, entre em contato conosco através do email: contato@tormenta20.com</p>
+        </section>
+    </div>
+</body>
+</html>
